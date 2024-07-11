@@ -22,6 +22,13 @@ export default function Home() {
       <form action={login} className="flex flex-col items-start gap-4">
         <h1 className="text-orange-700 text-3xl"> Login</h1>
         <Input
+          type="text"
+          name="username"
+          placeholder="username"
+          onChange={clearMessage}
+          className="rounded-full bg-sky-50 hover:border-sky-800"
+        />
+        <Input
           type="password"
           name="password"
           placeholder="password"
