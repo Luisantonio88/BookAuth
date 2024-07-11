@@ -1,7 +1,6 @@
 CREATE TABLE `sessions` (
 	`id` text NOT NULL,
-	`expires_at` integer NOT NULL,
-	FOREIGN KEY (`id`) REFERENCES `users`(`id`) ON UPDATE no action ON DELETE no action
+	`expires_at` integer NOT NULL
 );
 --> statement-breakpoint
 CREATE TABLE `users` (
